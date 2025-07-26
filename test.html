@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test API</title>
+</head>
+<body>
+  <h2>Click to call backend</h2>
+  <button onclick="callApi()">Call Backend</button>
+  <p id="result"></p>
+
+  <script>
+    async function callApi() {
+      try {
+        const response = await fetch("http://localhost:4508/Library-Manger-Book/frontend");
+        const data = await response.text();
+        document.getElementById("result").innerText = data;
+        console.log(data);
+      } catch (error) {
+        console.error("API call failed:", error);
+        document.getElementById("result").innerText = "Failed to connect.";
+      }
+    }
+  </script>
+</body>
+</html>

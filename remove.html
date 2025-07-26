@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove Book</title>
+    <link rel="stylesheet" href="style.css">
+     <style>
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">STUDENT LIBRARY MANAGEMENT SYSTEM</div>
+    <div class="form-box">
+        <h2>Update Book</h2>
+        <input type="number" placeholder="Book_id" id="bookid">
+        <input type="text" placeholder="Book Name" id="bookName">
+        <input type="text" placeholder="Author Name" id="author">
+        <input type="text" placeholder="Genre" id="genre">
+        <input type="text" placeholder="Title" id="Title">
+        <input type="Text" placeholder="ActiveLink" id="ActiveLink"><br>
+        <button onclick="updateBook()">Update</button>
+    </div>
+    <div class="book-table">
+    <h3>Books List</h3>
+    <table id="booksTable" border="1">
+        <thead>
+            <tr>
+                <th>Book Id</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Title</th>
+                <th>Active Link</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- New rows will be added here -->
+        </tbody>
+    </table>
+</div>
+
+    <script src="backend.js"></script>
+</body>
+</html>

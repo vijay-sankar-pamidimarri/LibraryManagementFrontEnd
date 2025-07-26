@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">STUDENT LIBRARY MANAGEMENT SYSTEM</div>
+    <div class="form-box">
+        <h2>UPDATE Book</h2>
+        <input type="text" placeholder="Book ID" id="bookId">
+        <input type="text" placeholder="New Book Name" id="bookName">
+        <input type="text" placeholder="New Author Name" id="author">
+        <input type="text" placeholder="New Genre" id="genre">
+        <input type="text" placeholder="New Title" id="title">
+        <input type="text" placeholder="New Active Link" id="activeLink">
+        <button onclick="updateBook()">UPDATE</button>
+    </div>
+
+    <div class="book-table">
+        <h3>Books List</h3>
+        <table id="booksTable" border="1">
+            <thead>
+                <tr>
+                    <th>Book Id</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Title</th>
+                    <th>Active Link</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- New rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="backend.js"></script>
+</body>
+</html>
