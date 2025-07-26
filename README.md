@@ -53,3 +53,37 @@ Backend (Assumed API)
 Spring Boot REST APIs
 
 JSON communication using DTOs
+
+
+🚀 How to Run
+Clone the Repository
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/library-frontend.git
+Open the folder
+
+bash
+Copy
+Edit
+cd library-frontend
+Run the project
+
+Open index.html in your browser
+
+OR use Live Server in VS Code (recommended)
+
+🗂️ Folder Structure
+bash
+Copy
+Edit
+library-frontend/
+├── index.html       # Main web page
+├── style.css        # Page styling and layout
+├── script.js        # JavaScript for logic and API calls
+└── README.md        # Project documentation
+
+
+Backend Application Integration---
+Soon We Integrate The Backend To This front End
