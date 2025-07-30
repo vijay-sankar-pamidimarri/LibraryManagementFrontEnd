@@ -1,5 +1,7 @@
+
+const API_ENDPOINT_URL="https://library-app-55zn.onrender.com";
 function removeBook(){
-    fetch("http://localhost:4508/Library-Manger-Book/getAll")
+    fetch(`${API_ENDPOINT_URL}/Library-Manger-Book/getAll`)
     .then(respsone =>{
         document.getElementById("bookId").value=respsone.status;
         return respsone.json();
@@ -24,7 +26,7 @@ function addBook() {
     category: document.getElementById("genre").value // ✅ fixed spelling
   };
 
-  fetch("http://localhost:4508/Library-Manger-Book/CreateBook", {
+  fetch(`${API_ENDPOINT_URL}/Library-Manger-Book/CreateBook`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -71,7 +73,7 @@ function removeBook() {
         return;
     }
 
-    fetch("http://localhost:4508/Library-Manger-Book/deleteById", {
+    fetch(`${API_ENDPOINT_URL}/Library-Manger-Book/deleteById`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -134,7 +136,7 @@ function updateBook() {
         id: bookId
     };
 
-    fetch("http://localhost:4508/Library-Manger-Book/updateById", {
+    fetch(`${API_ENDPOINT_URL}/Library-Manger-Book/updateById`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
